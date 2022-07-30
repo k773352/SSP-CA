@@ -4,19 +4,20 @@
 	<table id="menuTable" border="1" class="indent">
 			<thead>
 		 <tr>
-			<th colspan="3">Topjobs</th>
+			<th colspan="4">Topjobs</th>
 		 </tr>
 		 <tr>
 				<th>position</th>
 				<th>location</th>
 				<th>salsry</th>
+				<th></th>
 		 </tr>
 			</thead>
 			<tbody>
 	<!-- Allow to loop over. Go to every section and loop it. -->
      <xsl:for-each select="//section">
 		 <tr>
-		       <td colspan="3" class="titleBg">
+		       <td colspan="4" class="titleBg">
 			   		<!-- Output name -->
 					<xsl:value-of select="@name" />
 			 </td>
