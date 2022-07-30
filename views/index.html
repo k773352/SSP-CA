@@ -18,9 +18,9 @@
     </head>
     <body>
         <!-- Responsive navbar-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-light" style="background-color: #e69d9d;">
             <div class="container">
-                <a class="navbar-brand" href="#">Topjobs</a>
+                 <a class="navbar-brand" href="#">Topjobs</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -42,21 +42,22 @@
     <form enctype="application/json" action="/post/json" method="post">
             <div class="form-group">
             <select class="form-control" name="sec_n">
-                <option value="0">PART-TIME</option>
-                <option value="1">FULL-TIME</option>
-                <option value="2">CHEF</option>
-                <option value="3">CONTRACT</option>
+                <option value="0">Part-time</option>
+                <option value="1">Full-time</option>
+                <option value="2">Chef</option>
+                <option value="3">Contract</option>
             </select>
-            <input class="form-control mt-3" type="text" name="CATEGORY" placeholder="CATEGORY">
-            <input class="form-control mt-3" type="text" name="JOB TYPE" placeholder="JOB TYPE">
-            <div class="d-grid gap-2"><button type="submit" class="btn btn-primary btn-block mt-3">FIND JOB</button></div>
+            <input class="form-control mt-3" type="text" name="position" placeholder="position">
+            <input class="form-control mt-3" type="text" name="location" placeholder="location">
+            <input class="form-control mt-3" type="text" name="salary" placeholder="salary">
+            <div class="d-grid gap-2"><button type="submit" class="btn btn-primary btn-block mt-3">submit</button></div>
         </div>
     </form>
             <div class="d-grid gap-2">
-        <button id="delete" class="btn btn-danger btn-block mt-3">DELETE</button>
+        <button id="delete" class="btn btn-danger btn-block mt-3">delete</button></div>
         <p class="text-muted text-center">To delete an option, click the required row first</p>
+              </div>
         </div>
-    </div>
     </div>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>

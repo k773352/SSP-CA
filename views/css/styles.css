@@ -315,7 +315,7 @@ caption {
 
 th {
   text-align: inherit;
-  text-align: -webkit-match-parent;
+  text-align: match-parent;
 }
 
 thead,
@@ -325,7 +325,7 @@ tr,
 td,
 th {
   border-color: inherit;
-  border-style: solid;
+  border-style: dashed;
   border-width: 0;
 }
 
