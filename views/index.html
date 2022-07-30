@@ -33,7 +33,8 @@
         <div class="container">
             <div class="row">
             <div class="text-center mt-5">
-                <h1>Welcome to Topjobs</h1>
+                <div class="logo"><span><img src="https://www.counterpointresearch.com/wp-content/uploads/2017/12/service_sub_9-iot.png" width="500px" /></span></div>
+                 <h1>Welcome to Topjobs</h1>
                 <p class="lead">Please type the occupation you are looking for</p>
             </div>
             <div id="results" class="col-lg-8 mb-5 order-2"></div>
@@ -41,19 +42,18 @@
     <form enctype="application/json" action="/post/json" method="post">
             <div class="form-group">
             <select class="form-control" name="sec_n">
-                <option value="0">Part-time</option>
-                <option value="1">Full-time</option>
-                <option value="2">Chef</option>
-                <option value="3">Contract</option>
+                <option value="0">PART-TIME</option>
+                <option value="1">FULL-TIME</option>
+                <option value="2">CHEF</option>
+                <option value="3">CONTRACT</option>
             </select>
-            <input class="form-control mt-3" type="text" name="position" placeholder="position">
-            <input class="form-control mt-3" type="text" name="location" placeholder="location">
-            <input class="form-control mt-3" type="text" name="salary" placeholder="salary">
-            <div class="d-grid gap-2"><button type="submit" class="btn btn-primary btn-block mt-3">Submit</button></div>
+            <input class="form-control mt-3" type="text" name="CATEGORY" placeholder="CATEGORY">
+            <input class="form-control mt-3" type="text" name="JOB TYPE" placeholder="JOB TYPE">
+            <div class="d-grid gap-2"><button type="submit" class="btn btn-primary btn-block mt-3">FIND JOB</button></div>
         </div>
     </form>
             <div class="d-grid gap-2">
-        <button id="delete" class="btn btn-danger btn-block mt-3">Delete</button>
+        <button id="delete" class="btn btn-danger btn-block mt-3">DELETE</button>
         <p class="text-muted text-center">To delete an option, click the required row first</p>
         </div>
     </div>
